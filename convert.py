@@ -13,8 +13,8 @@ phrases_to_translate = [
 font = ImageFont.truetype('arialbd.ttf', 28) 
 
 # Translated: leave blank for input prompt, otherwise make a list here, with the same positions for each phrase as in 'phrases_to_translate'.
-#translated = []
-translated = ['Sentado', 'Virando', 'Levantando', 'Tocando', 'Abaixando', 'Dobrando', 'Cobrindo', 'Levantando', 'Repita 12 a 31 mais duas vezes, depois continue, começando com 32.']
+translated = []
+#translated = ['Sentado', 'Virando', 'Levantando', 'Tocando', 'Abaixando', 'Dobrando', 'Cobrindo', 'Levantando', 'Repita 12 a 31 mais duas vezes, depois continue, começando com 32.']
 
 # Root directory. Don't change this
 root_dir = os.path.dirname(os.path.abspath(__file__))
@@ -149,9 +149,11 @@ def main():
     prost3.write_text_box(xy=textbox_3[0], text=translated[8], box_width=textbox_3[1], font_filename=font_input, font_size=font_size, place='justify')
     prost3.save('output/prost_3.png')
 
-    print("Done!")
+    print("Done! Images have been saved to 'output' folder.")
     if os.name == 'nt':
         os.startfile(os.path.join(root_dir, 'output'))
+    else:
+        input('Press enter to exit.')
 
 if __name__ == '__main__':
     main()

@@ -6,4 +6,4 @@ Just clone this repository and run `convert.py` via [Python 3](https://www.pytho
 
 ## Usage:
 * You can just double-click `convert.py` and it will open if you have Python 3 installed.
-* Otherwise, open your terminal and type `python convert.py`.
+* Otherwise, open your terminal and type `python convert.py`. The usage is fairly straightforward.
